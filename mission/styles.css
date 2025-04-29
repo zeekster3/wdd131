@@ -1,0 +1,44 @@
+.content{
+    line-height:1.75em;
+    font-size: 20px;
+    font-family:'Times New Roman';
+    Margin: 3em;
+  
+    
+}
+.title{
+    text-align:center;
+}
+.top{
+    text-transform: capitalize;
+    text-align:center;
+   
+    
+ 
+}
+.description{
+    text-align:left;
+}
+.h1{
+    font-size: 40px;
+    text-transform: capitalize;
+}
+h2{
+    color: #006EB6;
+    font-size: 30px;
+    text-transform: capitalize;
+}
+body{
+    text-align:left;
+}
+
+.points_list{
+    text-align:left;
+}
+.byulogo{
+ width: 150px;
+ height:150px;
+ display: block;
+ margin-left: auto;
+ margin-right: auto;
+}
