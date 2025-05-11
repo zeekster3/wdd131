@@ -8,6 +8,11 @@
  --primary-font: Arial, Helvetica,sans-serif;
  --secondary-font: Mooli, san-serif;
  }
+ @media screen and (min-width: 700px) {
+  .gallery {
+    grid-template-columns: 1fr 1fr;
+  }
+}
 body {
     font-family: var(--primary-font);
     font-size: 1.1em;
@@ -63,9 +68,4 @@ img {
 footer {
     color: white;
     margin-left: 20px;
-}
-@media screen and (min-width: 700px) {
-  .gallery {
-    grid-template-columns: 1fr 1fr;
-  }
 }
