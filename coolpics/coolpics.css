@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=family=Mooli&display=swap");
 
 
-
  @media screen and (min-width: 700px) {
   .gallery {
     grid-template-columns: 1fr 1fr;
@@ -177,4 +176,27 @@ main {
     .viewer img {
         max-height: 100%;
     }
+}
+.modal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  z-index: 1000;
+  left: 0; top: 0; width: 100vw; height: 100vh;
+  background: rgba(0,0,0,0.8);
+}
+.modal.hide {
+  display: none;
+}
+.modal-content {
+  max-width: 90vw;
+  max-height: 90vh;
+}
+.close {
+  position: absolute;
+  top: 20px; right: 40px;
+  color: #fff;
+  font-size: 40px;
+  cursor: pointer;
 }

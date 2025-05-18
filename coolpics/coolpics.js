@@ -1,10 +1,11 @@
 const menuButton = document.querySelector(".menu-button");
+const menu = document.querySelector(".menu");
+
 function toggleMenu() {
   const menu = document.querySelector(".menu");
   menu.classList.toggle("hide");
 }
 
-menuButton.addEventListener("click", toggleMenu);
 menuButton.addEventListener("click", toggleMenu);
 
 function handleResize() {
@@ -14,42 +15,33 @@ function handleResize() {
         menu.classList.add("hide");
     }
 }
-
 handleResize();
 
-window.addEventListener("resize", handleResize);
+document.addEventListener("DOMContentLoaded", function() {
+  const images = document.querySelectorAll('.gallery img');
+  const modal = document.getElementById('modal');
+  const modalImg = document.getElementById('modal-img');
+  const closeBtn = document.querySelector('.close');
 
-function viewerTemplate(pic, alt) {
-    return '<div class="viewer"><button class="close-viewer">X</button><img src="${pic}" alt="${alt}"></div>';
-    //couldn't get it to return without it being in a single line
-}
+  images.forEach(img => {
+    img.addEventListener('click', function() {
+      const fullImg = img.getAttribute('data-full');
+      if (fullImg) {
+        modalImg.src = fullImg;
+        modal.classList.remove('hide');
+      }
+    });
+  });
 
-function viewHandler(event) {
-    if (event.target.tagName === 'IMG') {
-        const imageSrc = event.target.src;
-        const imageParts = imageSrc.split("-");
-        const fullImageSrc = imageParts[0] + "-full.jpeg";  
+  closeBtn.addEventListener('click', function() {
+    modal.classList.add('hide');
+    modalImg.src = '';
+  });
 
-        
-        const viewerHTML = viewerTemplate(fullImageSrc, event.target.alt);
-        document.body.insertAdjacentHTML("afterbegin", viewerHTML);
-
-        
-        const viewer = document.querySelector('.viewer');
-        viewer.style.display = 'block';
-
-        
-        const closeButton = document.querySelector('.close-viewer');
-        closeButton.addEventListener('click', closeViewer);
+  modal.addEventListener('click', function(e) {
+    if (e.target === modal) {
+      modal.classList.add('hide');
+      modalImg.src = '';
     }
-}
-
-function closeViewer() {
-    const viewer = document.querySelector('.viewer');
-    viewer.remove();
-}
-
-document.addEventListener('DOMContentLoaded', () => {
-    const gallery = document.querySelector('.gallery');
-    gallery.addEventListener('click', viewHandler);
+  });
 });
