@@ -1,8 +1,8 @@
 :root {
-    --link-color: #03ae0c;
+    --link-color: #2600ff;
     --text-dark: #e00707;
     --text-light: #white;
-    --border-color: #0905f1;
+    --border-color: #0400ff;
     --body-font: Georgia, Serif;
     --headline-font: Impact, Serif;
     }
@@ -12,7 +12,7 @@
         padding-bottom: 15px;
         text-align: center;
     }
-    .skiptocontent a {
+     .skiptocontent a {
         position: absolute;
         top: -50px;
     }
@@ -41,7 +41,7 @@
     main {
         display: grid;
         grid-template-columns: 3fr 1fr;
-        margin-top: 20px;
+        margin-top: 10px;
     }
     #filters {
         border: 2px solid var(--border-color);
@@ -61,3 +61,4 @@
     h3 {
         color: var(--link-color);
     }
+   
