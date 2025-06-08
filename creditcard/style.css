@@ -1,0 +1,91 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #222;
+  color: white;
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-container {
+  background-color: #ccc;
+  padding: 2rem;
+  border-radius: 10px 10px 0 0;
+  width: 350px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0);
+  color: #333;
+}
+
+.card-container h2 {
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+label {
+  display: block;
+  margin-top: 1rem;
+  color: #333;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 4px;
+  border: 1px solid #999;
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.row input {
+  flex: 1;
+}
+
+.submit-button {
+  margin-top: 1.5rem;
+  padding: 0.5rem 1rem;
+  background-color: white;
+  border: 2px solid #333;
+  color: #333;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.submit-button:hover {
+  background-color: #333;
+  color: white;
+}
+
+.cvc-box {
+  background-color: #ccc;
+  padding: 1rem;
+  border-radius: 0 0 10px 10px;
+  width: 350px;
+  box-shadow: 0 4px 10px rgb(0, 0, 0);
+  margin-top: -1px; 
+  color: #333;
+  box-sizing: border-box;
+}
+
+.cvc-box label {
+  margin: 0;
+  color: #333;
+}
+
+.cvc-box input[type="text"] {
+  width: 100%;
+  padding: 0.4rem;
+  border-radius: 4px;
+  border: 1px solid #999;
+  box-sizing: border-box;
+}
