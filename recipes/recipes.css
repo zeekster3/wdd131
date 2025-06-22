@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+    :root {
+    --primary-color: #1B98E0;
+    --secondary-color: #59c3c3;
+    --text-dark: #333;
+    --text-light: #ebebeb;
+    --primary-font: sans-serif;
+    --secondary-font: "Patrick Hand", sans-serif;
+}
+
+* {
+    margin: 0;
+}
+
+img {
+	max-width: 100%;
+}
+
+.hidden {
+    display: none;
+}
+
+header {
+    display: flex;
+    align-items: flex-end;
+    justify-self: center;
+    justify-content: center;
+    justify-items: center;
+    margin: 50px;
+}
+
+#logo {
+    width: 110px;
+}
+
+header h1 {
+    font-family: var(--secondary-font);
+    font-size: 4.5em;
+    margin-bottom: -15px;
+    flex: 0 1 5em;
+}
+
+#search-bar {
+    display: flex;
+    margin: 20px;
+    width: 90%;
+    justify-self: center;
+}
+
+#search-input {
+    width: 100%;
+    font-size: 1.2em;
+    border: 1px solid black;
+    border-right: 2px solid black;
+    border-radius: 5px 0 0 5px;
+}
+
+#search-btn {
+    width: 40px;
+    border: 1px solid black;
+    border-radius: 0 5px 5px 0;
+}
+
+#search-btn img {
+    padding: 1px;
+}
+
+hr {
+    margin: 20px 0;
+}
+
+
+.recipe {
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 20px;
+    padding: 20px;
+    width: 85%;
+}
+
+.recipe-tags {
+    display: flex;
+    margin-left: -5px;
+}
+
+.recipe-tag {
+    border: 1px solid black;
+    margin: 5px 5px;
+    padding: 5px 10px;
+    font-family: var(--primary-font);
+}
+
+.recipe-name {
+    font-family: var(--secondary-font);
+    font-size: 2.5em;
+    color: var(--primary-color);
+    margin-top: 20px;
+}
+
+.recipe p {
+    font-family: var(--primary-font);
+}
+
+.rating {
+    margin-bottom: 20px;
+}
+
+.icon-star,
+.icon-star-empty {
+    line-height: 1;
+    vertical-align: middle;
+}
+
+.icon-star-empty {
+    font-size: 1.5em;
+}
+
+/* Footer style */
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    padding: 20px;
+    width: 90%;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.social a {
+    padding: 5px;
+}
+
+.social img {
+    width: 40px;
+    justify-self: center;
+}
+
+.attribution {
+    font-size: 0.8em;
+    font-family: var(--primary-font);
+    color: var(--text-dark);
+    text-align: center;
+    padding: 5px;
+}
+
+@media screen and (min-width: 600px) {
+    .hidden {
+        display: flex;
+    }
+
+    hr {
+        margin: 20px;
+    }
+    
+    .recipe {
+        display: flex;
+        flex-direction: row;
+        margin: 50px;
+    }
+
+    .recipe img {
+        width: 50%;
+        height: 100%;
+    }
+
+    .details {
+        margin: 20px;
+        margin-top: -5px;
+    }
+
+    .recipe-tags {
+        flex-wrap: wrap;
+    }
+
+    .rating {
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+@media screen and (min-width: 960px) {
+    footer {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px;
+    }
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Recipe search website for W09 prove asignment">
+    <title>Recipe Book</title>
+    <link rel="stylesheet" href="recipes.css">
+    <script src="recipes.js" defer></script>
+</head>
+<body>
+    <header>
+        <img id="logo" src="images/recipe-book.png" alt="Recipe book site logo">
+        <h1>RecipeBook</h1>
+    </header>
+    <main>
+        <form action="" method="get" id="search-bar">
+            <input id="search-input" type="search" placeholder="Find a Recipe">
+            <button id="search-btn" type="submit"><img src="images/search.svg" alt="Search button"></button>
+        </form>
+        <hr>
+        <section class="recipe">
+            <img src="images/chicken-curry.webp" alt="Chicken curry with white rice">
+            <div class="details">
+                <div class="recipe-tags">
+                    <div class="recipe-tag">chicken</div>
+                    <div class="recipe-tag">entree</div>
+                    <div class="recipe-tag">Indian</div>
+                </div>
+                <h2 class="recipe-name">Chicken Curry</h2>
+                <span
+                    class="rating"
+                    role="img"
+                    aria-label="Rating: 4 out of 5 stars"
+                >
+                    <span aria-hidden="true" class="icon-star">⭐</span>
+                    <span aria-hidden="true" class="icon-star">⭐</span>
+                    <span aria-hidden="true" class="icon-star">⭐</span>
+                    <span aria-hidden="true" class="icon-star">⭐</span>
+                    <span aria-hidden="true" class="icon-star-empty">☆</span>
+                </span>
+                <p class="recipe-description hidden">Quick and easy Chicken curry recipe made with easy to find ingredients.</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="social">
+            <a href="#"><img src="images/instagram_icon.svg" alt="instagram icon"></a>
+            <a href="#"><img src="images/youtube_icon.svg" alt="youtube icon"></a>
+            <a href="#"><img src="images/pinterest_icon.svg" alt="pinterest icon"></a>
+        </div>
+    </footer>
+</body>
+</html>
